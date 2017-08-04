@@ -28,7 +28,6 @@ var submitForm = function () {
 function getCurrentCurrencyPrices() {
     return $.getJSON('/getCurrentCurrencyData/' + currencies).done(function (data) {
         currentPrices = data;
-        console.log(currentPrices);
 
         getPastCurrencyPrices();
     });
@@ -37,7 +36,6 @@ function getCurrentCurrencyPrices() {
 function getPastCurrencyPrices () {
     return $.getJSON('/getPastCurrencyData/' + currencies).done(function (data) {
         pastPrices = data;
-        console.log(pastPrices);
 
         calculateReturnPercentage();
     });
@@ -69,7 +67,7 @@ function calculateReturnPercentage () {
     var difference = currentTotal - pastTotal;
     var returnPercentage = difference / pastTotal;
     
-    displayReturnPercentage(returnPercentage);
+    displayReturnPercentage(returnPercentage * 100);
 }
 
 var displayReturnPercentage = function (returnPercentage) {

@@ -36,7 +36,6 @@ router.get('/getCurrentCurrencyData/:currencies', function (req, res) {
 
       returnData.push(obj);
     });
-    console.log(returnData);
     return res.json(returnData);
   });
 
@@ -51,7 +50,6 @@ router.get('/getPastCurrencyData/:currencies', function(req, res) {
   }
 
   var currencies = req.params.currencies.split(',');
-  console.log(currencies);
 
   var async = require('async');
   var request = require('request');
@@ -88,7 +86,6 @@ router.get('/getPastCurrencyData/:currencies', function(req, res) {
   async.map(urlObjects, httpGet, function (err, result) {
     if (err) return console.log(err);
 
-    // console.log(returnData);
     return res.send(returnData);
 
   });
