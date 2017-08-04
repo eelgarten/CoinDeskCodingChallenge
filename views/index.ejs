@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title><%= title %></title>
+
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/client.js"></script>
+
+<h1>Portfolio Tracker</h1>
+
+<div id="inputCurrency">
+    <form onSubmit="submitForm(); return false;" id="inputCurrencyForm">
+        <table>
+
+            <tr class="form-field">
+                <td>Currency</td>
+                <td>Balance</td>
+            </tr>
+
+            <tr class="form-field">
+                <td><label for="BTC">BTC</label></td>
+                <td><input type="number" name="BTC" min="0" value="0"></td>
+            </tr>
+
+            <tr class="form-field">
+                <td><label for="ETH">ETH</label></td>
+                <td><input type="number" name="ETH" min="0" value="0"></td>
+            </tr>
+
+            <tr class="form-field">
+                <td><label for="XRP">XRP</label></td>
+                <td><input type="number" name="XRP" min="0" value="0"></td>
+            </tr>
+
+            <tr class="form-field">
+                <td><label for="BCH">BCH</label></td>
+                <td><input type="number" name="BCH" min="0" value="0"></td>
+            </tr>
+
+            <tr class="form-field">
+                <td><label for="LTC">LTC</label></td>
+                <td><input type="number" name="LTC" min="0" value="0"></td>
+            </tr>
+
+            <tr class="form-field">
+                <td><label for="XEM">XEM</label></td>
+                <td><input type="number" name="XEM" min="0" value="0"></td>
+            </tr>
+
+            <tr class="form-field">
+                <td><label for="ETC">ETC</label></td>
+                <td><input type="number" name="ETC" min="0" value="0"></td>
+            </tr>
+
+            <tr class="form-field">
+                <td><label for="DASH">DASH</label></td>
+                <td><input type="number" name="DASH" min="0" value="0"></td>
+            </tr>
+
+            <tr class="form-field">
+                <td><label for="MIOTA">MIOTA</label></td>
+                <td><input type="number" name="MIOTA" min="0" value="0"></td>
+            </tr>
+
+            <tr class="form-field">
+                <td><label for="XMR">XMR</label></td>
+                <td><input type="number" name="XMR" min="0" value="0"></td>
+            </tr>
+        </table>
+
+        <div class="formButtons">
+            <span><button type="submit" id="submitButton">Submit</button></span>
+            <span><button type="button" id="clearButton">Clear</button></span>
+        </div>
+
+        <div id="results">
+
+        </div>
+
+    </form>
+</div>
+
+</body>
+
+</html>

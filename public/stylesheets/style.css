@@ -1,0 +1,28 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.form-field td {
+  padding: 5px;
+}
+
+.form-field input {
+  width:50px;
+}
+
+.formButtons {
+  padding-top: 10px;
+}
+
+.formButtons span{
+  padding: 5px;
+}
+
+#results {
+  padding-top:10px;
+}
